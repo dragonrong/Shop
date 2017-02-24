@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mohu"
+    tools:context=".user.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <EditText
+            android:id="@+id/edtPassWord"
+            android:hint="请输入密码："
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:background="@drawable/round1"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textCursorDrawable="@null"/>
+        <TextView
+            android:id="@+id/tvPassWord"
+            android:layout_above="@+id/edtPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/edtUserId"
+            android:hint="请输入账号："
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_above="@+id/tvPassWord"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:background="@drawable/round1"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textCursorDrawable="@null"/>
+
+        <TextView
+            android:layout_above="@+id/edtUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="账号："
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_below="@+id/edtPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/round2"
+            android:text="登陆"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/linkReg"
+            android:layout_below="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:linksClickable="true"
+            android:textSize="20sp"
+            android:text="注册"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:gravity="center"
+            android:layout_above="@+id/edtUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:textSize="40dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="#0168ce"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

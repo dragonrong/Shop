@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.rong.shop.widget.ShopToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:isShowSearchView="false"
+        app:title="宝贝详情"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/detail_show_5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="10dp"
+                    android:text="时尚女衣  流行女衣    外套     卡帕官方旗舰店 店铺地址：http//yecaoly.taobao.com"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#CCCCCC" />
+
+                <ImageView
+                    android:id="@+id/iv_baby_collection"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/second_2" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:text="￥299"
+                android:textColor="#CC3366"
+                android:textSize="22sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#CCCCCC" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="图文详情"
+                android:gravity="center"
+                android:textColor="#CC3366"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/detail_show_6"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/detail_show_7"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/detail_show_8"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

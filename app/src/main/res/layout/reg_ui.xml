@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mohu"
+    tools:context=".user.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <LinearLayout
+            android:id="@+id/checkL"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/edtRegC"
+                android:hint="验证码："
+                android:textColorHint="@color/white"
+                android:layout_weight="2"
+                android:textColor="@color/white"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:background="@drawable/round1"
+                android:layout_width="50dp"
+                android:layout_height="38dp"
+                android:maxLength="5"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textCursorDrawable="@null"/>
+
+            <TextView
+                android:id="@+id/txtChkCode"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/wheat"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtRegP"
+            android:hint="密码："
+            android:textColorHint="@color/white"
+            android:layout_above="@+id/checkL"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:background="@drawable/round1"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textCursorDrawable="@null"/>
+
+        <EditText
+            android:id="@+id/edtRegU"
+            android:hint="账号："
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_above="@+id/edtRegP"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:background="@drawable/round1"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textCursorDrawable="@null"/>
+
+        <TextView
+            android:layout_above="@+id/edtRegU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"
+            android:text="Register"
+            android:textSize="38dp"
+            android:textColor="#0168ce"/>
+
+
+
+        <Button
+            android:id="@+id/btnReg"
+            android:layout_below="@+id/checkL"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/round2"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
